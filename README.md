@@ -23,7 +23,7 @@ DNI: 70991422
      - 1,Crédito,100.00
 
 3. **Salida del Programa:**  
-   
+   - Estructura:
    Reporte de Transacciones
    ---------------------------------------------
    Balance Final: 10985,85 
@@ -33,7 +33,6 @@ DNI: 70991422
    Transacciones de Crédito: 508 -  Transacciones de Débito: 492
 
 4. **Lenguaje de Programación:**  
-
    - Java
    - openjdk version "21.0.7"
 
