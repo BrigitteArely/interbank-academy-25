@@ -64,11 +64,12 @@ public class codeable{
                 }
             }
             // Mostrar el reporte
-            System.out.println("       REPORTE       ");
+            System.out.println("Reporte de Transacciones");
+            System.out.println("---------------------------------------------");
             System.out.printf("Balance Final: %.2f %n" , balanceFinal);
             System.out.printf("Transacción Mayor: %n ID: %s  -  MONTO: %.2f %n" , transID, montoMaximo);            
-            System.out.println("Total de Transacciones: " + numTransacciones);
-            System.out.printf("Crédito: %d  Débito: %d\n", credito, debito);
+            System.out.println("Conteo total de Transacciones: " + numTransacciones);
+            System.out.printf("Transacciones de Crédito: %d - Transacciones de Débito: %d\n", credito, debito);
 
             sc.close();
         }catch (FileNotFoundException e) {
