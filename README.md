@@ -18,9 +18,9 @@ DNI: 70991422
 
 2. **Entrada de Datos:**  
    La aplicación deberá leer el archivo data.csv
-   Estructura:
-      id,tipo,monto
-      1,Crédito,100.00
+   - Estructura:
+     - id,tipo,monto
+     - 1,Crédito,100.00
 
 3. **Salida del Programa:**  
    
