@@ -35,7 +35,7 @@ DNI: 70991422
 4. **Lenguaje de Programación:**  
 
    - Java
-      openjdk version "21.0.7"
+   - openjdk version "21.0.7"
 
 5. **Enfoque y Solución:**
 La aplición fue desarrollada con un enfoque directo, toda la lógica fue implemetada en el main. No hay métodos auxiliares. 
