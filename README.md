@@ -1,19 +1,14 @@
 # Reto Técnico: Procesamiento de Transacciones Bancarias (CLI)
 
-## Objetivo:
+## Autor:
+Brigitte Arely Champi Paredes
+DNI: 70991422
 
-Desarrolla una aplicación de línea de comandos (CLI) que procese un archivo CSV con transacciones bancarias y genere un reporte que incluya:
+ ## Introducción: 
+ Elaborar un programa para obtener el Balance final, la transacción mas alta identificando el ID y monto de la misma así como el Numero de transacciones entre créditos y débitos.
 
-- **Balance Final:**  
-  Suma de los montos de las transacciones de tipo "Crédito" menos la suma de los montos de las transacciones de tipo "Débito".
-
-- **Transacción de Mayor Monto:**  
-  Identificar el ID y el monto de la transacción con el valor más alto.
-
-- **Conteo de Transacciones:**  
-  Número total de transacciones para cada tipo ("Crédito" y "Débito").
-
----
+## Consideraciones: 
+ Balance = Suma de los montos de créditos - Suma de los montos de débito
 
 ## Instrucciones
 
@@ -22,45 +17,31 @@ Desarrolla una aplicación de línea de comandos (CLI) que procese un archivo CS
    `https://github.com/codeableorg/interbank-academy-25`
 
 2. **Entrada de Datos:**  
-   La aplicación deberá leer un archivo CSV. Ejemplo de contenido:
-
-   ```
-   id,tipo,monto
-   1,Crédito,100.00
-   2,Débito,50.00
-   3,Crédito,200.00
-   4,Débito,75.00
-   5,Crédito,150.00
-   ```
+   La aplicación deberá leer el archivo data.csv
+   Estructura:
+      id,tipo,monto
+      1,Crédito,100.00
 
 3. **Salida del Programa:**  
-   La aplicación debe mostrar el reporte final en la terminal.  
-   Ejemplo de salida:
-
-   ```
+   
    Reporte de Transacciones
    ---------------------------------------------
-   Balance Final: 325.00
-   Transacción de Mayor Monto: ID 3 - 200.00
-   Conteo de Transacciones: Crédito: 3 Débito: 2
-   ```
+   Balance Final: 10985,85 
+   Transacción Mayor: 
+   ID: 222  -  MONTO: 499,69 
+   Conteo total de Transacciones: 1000
+   Transacciones de Crédito: 508 -  Transacciones de Débito: 492
 
 4. **Lenguaje de Programación:**  
-   Utiliza el lenguaje de tu preferencia. Opciones recomendadas:
 
-   - Python
    - Java
-   - C#
-   - JavaScript (Node.js)
+      openjdk version "21.0.7"
 
-5. **README del Proyecto:**  
-   Incluye un archivo `README.md` con la siguiente estructura:
+5. **Enfoque y Solución:**
+La aplición fue desarrollada con un enfoque directo, toda la lógica fue implemetada en el main. No hay métodos auxiliares. 
 
-   - **Introducción:** Breve descripción del reto y su propósito.
-   - **Instrucciones de Ejecución:** Cómo instalar dependencias y ejecutar la aplicación.
-   - **Enfoque y Solución:** Lógica implementada y decisiones de diseño.
-   - **Estructura del Proyecto:** Archivos y carpetas principales.
-
-6. **Documentación y Calidad del Código:**
-   - Código bien documentado y fácil de leer.
-   - Comentarios explicando pasos clave y lógica del programa.
+   1. Se inicia con la lectura del archivo CSV con la clase Scanner
+   2. La lectura se realiza linea por linea, considerando que se debe omitir la línea de encabezado.
+   3. Cada Linea del archivo debe ser dividida en columnas segun: ID - TIPO - MONTO.
+   4. Segun el TIPO podemos sumar o restar los montos para el balance asi como realizar el conteo de las transacciones para cada uno.
+   5. Se realiza una comparación con el monto mayor registrado hasta que se ubique la transacción mas grande.
